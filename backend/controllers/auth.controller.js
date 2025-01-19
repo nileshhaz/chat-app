@@ -21,7 +21,7 @@ export const signup = async (req,res)=>{
         const salt = await bcryptjs.genSalt(10);
         const hashedPassword = await bcryptjs.hash(password,salt);
 
-        const profilePic = `https://api.dicebear.com/9.x/pixel-art/svg?seed=${username}`
+        const profilePic = `https://api.dicebear.com/9.x/miniavs/svg?seed=${username}`
 
         const newUser =  new User({
             fullName,
