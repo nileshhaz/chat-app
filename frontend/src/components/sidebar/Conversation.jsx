@@ -1,6 +1,6 @@
 import React from 'react';
 import useConversation from '../../zustand/useConversation';
-import { useSocketContext } from '../../context/socketContext';
+import { useSocketContext } from '../../context/SocketContext';
 
 const Conversation = ({ conversation, lastIdx }) => {
   const { fullName = "Unknown User", username = "N/A", profilePic, gender = "unknown" } = conversation;
